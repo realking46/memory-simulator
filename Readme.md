@@ -53,7 +53,7 @@ Option 2: Direct Compilation
 
 Run the following command in your terminal or PowerShell: 
 ```bash
-g++ -std=gnu++20 -Iinclude -Isrc main.cpp src/allocator/memory_manager.cpp src/cache/cache.cpp src/virtual_memory/VirtualMemory.cpp src/virtual_memory/TLB.cpp src/buddy/buddy_allocator.cpp -o memsim
+g++ -std=gnu++20 -Isrc main.cpp src/allocator/memory_manager.cpp src/cache/cache.cpp src/virtual_memory/VirtualMemory.cpp src/virtual_memory/TLB.cpp src/buddy/buddy_allocator.cpp -o memsim
 ```
 
 ## Running Automated Tests
@@ -102,5 +102,6 @@ Outputs are saved in tests/outputs/ folder.
     Virtual address → Page Table → Physical Memory → Cache → RAM
 
 ## Authors
+
 
 Nishant Singh
