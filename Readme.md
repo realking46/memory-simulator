@@ -4,10 +4,10 @@ Memory Management Simulator
 
 This project simulates operating system memory management at a user-space level. It models:
 Dynamic memory allocation using:
-    First Fit
-    Best Fit
-    Worst Fit
-    Buddy allocator
+   - First Fit
+   - Best Fit
+   - Worst Fit
+   - Buddy allocator
 
 Multilevel CPU caches (L1 and L2) with configurable block size and associativity.
 Virtual memory using paging with page table and simple page replacement.
@@ -69,39 +69,38 @@ Outputs are saved in tests/outputs/ folder.
 
 1. **Memory Allocation Algorithms:**
 
-    First Fit
-    Best Fit
-    Worst Fit
-    Buddy Allocator (splitting and merging)
+    - First Fit
+    - Best Fit
+    - Worst Fit
+    - Buddy Allocator (splitting and merging)
 
 2. **Memory Metrics:**
 
-    Total memory
-    Used memory
-    Free memory
-    Internal fragmentation
-    External fragmentation
-    Allocation success/failure rate
-    Memory utilization
+   - Total memory
+   - Used memory
+   - Free memory
+   - Internal fragmentation
+   - External fragmentation
+   - Allocation success/failure rate
+   - Memory utilization
 
 3. **Cache Simulation:**
 
-    L1 and L2 caches
-    FIFO replacement (LRU optional)
-    Tracks hits and misses
+   - L1 and L2 caches
+   - FIFO replacement (LRU optional)
+   - Tracks hits and misses
 
 4. **Virtual Memory Simulation:**
 
-    Paging
-    Page table
-    Page hits and faults
-    Optional disk latency simulation
+   - Paging
+   - Page table
+   - Page hits and faults
+   - Optional disk latency simulation
 
 5. **Integration:**
 
     Virtual address → Page Table → Physical Memory → Cache → RAM
 
 ## Authors
-
-
 Nishant Singh
+
