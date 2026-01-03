@@ -47,23 +47,20 @@ memory-simulator/
 ├── memsim.exe
 └── README.md
 
-## Compilation
-Option 1: Using Makefile
-Option 2: Direct Compilation
-
-Run the following command in your terminal or PowerShell: 
+## Setup & Compilation
+🔹 Option 1: Automated Setup (Recommended)
+- Use the provided setup script (works in Git Bash / Linux / WSL):
 ```bash
-g++ -std=gnu++20 -Isrc main.cpp src/allocator/memory_manager.cpp src/cache/cache.cpp src/virtual_memory/VirtualMemory.cpp src/virtual_memory/TLB.cpp src/buddy/buddy_allocator.cpp -o memsim
+chmod +x setup.sh
+./setup.sh
 ```
 
-## Running Automated Tests
-All test cases are provided in the tests/ folder. To run all tests and save outputs:
-Run in git bash : 
-```bash
-./run_tests.sh
-```
+This will:
 
-Outputs are saved in tests/outputs/ folder.
+- Compile the project
+- Generate memsim
+- Automatically create run_tests.sh
+- Outputs are saved in tests/outputs/ folder.
 
 ## Supported Features
 
@@ -103,4 +100,5 @@ Outputs are saved in tests/outputs/ folder.
 
 ## Authors
 Nishant Singh
+
 
