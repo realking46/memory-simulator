@@ -1,0 +1,4 @@
+Memory Simulator
+> > > > > Page hits: 0
+Page faults: 0
+> 

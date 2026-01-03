@@ -1,0 +1,6 @@
+vm init 128 16
+vm access 0
+vm access 16
+vm access 0
+vm stats
+exit

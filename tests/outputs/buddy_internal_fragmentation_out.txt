@@ -1,0 +1,29 @@
+Memory Simulator
+> Initialized memory with size 64 bytes
+> Allocator set to buddy
+> Allocated block id=56
+> Allocated block id=48
+> Allocated block id=40
+> 
+===== MEMORY STATS =====
+Allocation requests: 3
+Successful allocations: 3
+Failed allocations: 0
+Failure rate: 0%
+Used memory: 24 bytes
+Internal fragmentation: 21 bytes
+External fragmentation: 0%
+Utilization: 37.5%
+
+===== L1 CACHE STATS =====
+Cache hits: 0
+Cache misses: 0
+
+===== L2 CACHE STATS =====
+Cache hits: 0
+Cache misses: 0
+
+===== VIRTUAL MEMORY STATS =====
+Page hits: 0
+Page faults: 0
+> 

@@ -1,0 +1,49 @@
+Memory Simulator
+> Initialized memory with size 64 bytes
+> Allocator set to best_fit
+> Allocated block id=1
+> Allocated block id=2
+> Allocated block id=3
+> Invalid block id
+> Allocated block id=4
+> Allocator = 1
+===== Memory Layout =====
+[0x0000 - 0x0009] USED   id=1 size=10 bytes
+[0x000a - 0x001d] USED   id=2 size=20 bytes
+[0x001e - 0x0022] USED   id=3 size=5 bytes
+[0x0023 - 0x0028] USED   id=4 size=6 bytes
+[0x0029 - 0x003f] FREE   size=23 bytes
+-----------------------------
+Total blocks: 5
+Used blocks : 4
+Free blocks : 1
+Largest free block: 23 bytes
+> 
+===== MEMORY STATS =====
+Allocation requests: 4
+Successful allocations: 4
+Failed allocations: 0
+Allocation success rate: 100%
+Internal fragmentation: 0 bytes
+Internal fragmentation: 0 bytes
+Internal fragmentation: 0 bytes
+Internal fragmentation: 0 bytes
+Allocation failure rate: 0%
+Total memory: 64 bytes
+Used memory: 41 bytes
+Free memory: 23 bytes
+Utilization: 64.0625%
+External fragmentation: 0%
+
+===== L1 CACHE STATS =====
+Cache hits: 0
+Cache misses: 0
+
+===== L2 CACHE STATS =====
+Cache hits: 0
+Cache misses: 0
+
+===== VIRTUAL MEMORY STATS =====
+Page hits: 0
+Page faults: 0
+> 

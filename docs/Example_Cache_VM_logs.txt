@@ -1,0 +1,23 @@
+===== MEMORY STATS =====
+Allocation requests: 0
+Successful allocations: 0
+Failed allocations: 0
+Used memory: 0 bytes
+Internal fragmentation: 0 bytes
+External fragmentation: 0%
+Utilization: 0%
+
+===== L1 CACHE STATS =====
+Cache hits: 2
+Cache misses: 2
+Hit ratio: 50%
+
+===== L2 CACHE STATS =====
+Cache hits: 0
+Cache misses: 2
+Hit ratio: 0%
+
+===== VIRTUAL MEMORY STATS =====
+Page hits: 2
+Page faults: 2
+Fault rate: 50%

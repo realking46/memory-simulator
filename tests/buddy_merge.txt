@@ -1,0 +1,9 @@
+init memory 64
+set allocator buddy
+malloc 8
+malloc 8
+free 56
+free 48
+dump memory
+stats all
+exit

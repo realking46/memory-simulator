@@ -1,0 +1,10 @@
+init memory 128
+set allocator buddy
+vm init 128 16
+access 0
+access 32
+access 0
+malloc 16
+free 112
+stats all
+exit

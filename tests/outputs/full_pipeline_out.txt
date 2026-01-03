@@ -1,0 +1,37 @@
+Memory Simulator
+> Initialized memory with size 128 bytes
+> Allocator set to buddy
+> > L1 MISS -> L2 MISS -> Memory Access
+Total access latency: 57 cycles
+> L1 MISS -> L2 MISS -> Memory Access
+Total access latency: 57 cycles
+> L1 HIT
+Total access latency: 2 cycles
+> Allocated block id=112
+> Block 112 freed and merged
+> 
+===== MEMORY STATS =====
+Allocation requests: 1
+Successful allocations: 1
+Failed allocations: 0
+Failure rate: 0%
+Used memory: 0 bytes
+Internal fragmentation: 0 bytes
+External fragmentation: 0%
+Utilization: 0%
+
+===== L1 CACHE STATS =====
+Cache hits: 1
+Cache misses: 2
+Hit ratio: 33.3333%
+
+===== L2 CACHE STATS =====
+Cache hits: 0
+Cache misses: 2
+Hit ratio: 0%
+
+===== VIRTUAL MEMORY STATS =====
+Page hits: 1
+Page faults: 2
+Fault rate: 66.6667%
+> 

@@ -1,0 +1,12 @@
+# Build outputs
+memsim
+memsim.exe
+*.o
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor files
+.vscode/
+.idea/
