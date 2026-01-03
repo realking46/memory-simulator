@@ -100,7 +100,8 @@ The project includes the following test artifacts:
 
     - full_pipeline.txt
 
- **Each test validates:**
+5. **Each test validates:**
+ 
     - Allocation correctness
     - Fragmentation behavior
     - Cache hit/miss tracking
@@ -144,6 +145,7 @@ The project includes the following test artifacts:
 
 ## Authors
 Nishant Singh
+
 
 
 
