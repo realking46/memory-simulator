@@ -80,32 +80,32 @@ The project includes the following test artifacts:
 
 1. **Memory Allocation Tests**
 
-  - buddy_basic.txt
-  - buddy_merge.txt
-  - buddy_internal_fragmentation.txt
-  - first_fit_basic.txt
-  - best_fit_fragmentation.txt
-  - worst_fit_behavior.txt
+    - buddy_basic.txt
+    - buddy_merge.txt
+    - buddy_internal_fragmentation.txt
+    - first_fit_basic.txt
+    - best_fit_fragmentation.txt
+    - worst_fit_behavior.txt
 
 2. **Cache Tests**
 
-  - cache_log.txt
-  - cache_11_12.txt
+    - cache_log.txt
+    - cache_11_12.txt
 
 3. **Virtual Memory Tests**
 
-  - virtual_memory_basic.txt
+    - virtual_memory_basic.txt
 
 4. **End-to-End Test**
 
-  - full_pipeline.txt
+    - full_pipeline.txt
 
 ## Each test validates:
 
-  - Allocation correctness
-  - Fragmentation behavior
-  - Cache hit/miss tracking
-  - Page faults and TLB behavior
+    - Allocation correctness
+    - Fragmentation behavior
+    - Cache hit/miss tracking
+    - Page faults and TLB behavior
 
 ## Supported Features
 
@@ -145,6 +145,7 @@ The project includes the following test artifacts:
 
 ## Authors
 Nishant Singh
+
 
 
 
