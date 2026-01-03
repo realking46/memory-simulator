@@ -58,7 +58,7 @@ chmod +x setup.sh
 This will:
 
 - Compile the project
-- Generate memsim
+- Generate memsim  (use this to test the scripts)
 - Automatically create run_tests.sh
 - Outputs are saved in tests/outputs/ folder.
 
@@ -145,6 +145,7 @@ The project includes the following test artifacts:
 
 ## Authors
 Nishant Singh
+
 
 
 
