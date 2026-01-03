@@ -143,8 +143,30 @@ The project includes the following test artifacts:
 
     Virtual address → Page Table → Physical Memory → Cache → RAM
 
+## Statistics Reported
+
+The simulator reports:
+
+1. **Memory**
+
+   - Allocation requests
+   - Successful / failed allocations
+   - Internal & external fragmentation
+   - Memory utilization
+
+2. **Cache**
+
+   - L1 cache hits & misses
+   - L2 cache hits & misses
+
+3. **Virtual Memory**
+
+   - Page hits
+   - Page faults
+
 ## Authors
 Nishant Singh
+
 
 
 
