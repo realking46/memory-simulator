@@ -52,26 +52,29 @@ Option 1: Using Makefile
 Option 2: Direct Compilation
 
 Run the following command in your terminal or PowerShell: 
-
+```bash
 g++ -std=gnu++20 -Iinclude -Isrc main.cpp src/allocator/memory_manager.cpp src/cache/cache.cpp src/virtual_memory/VirtualMemory.cpp src/virtual_memory/TLB.cpp src/buddy/buddy_allocator.cpp -o memsim
-
+```
 
 ## Running Automated Tests
 All test cases are provided in the tests/ folder. To run all tests and save outputs:
-Run in git bash : ./run_tests.sh
+Run in git bash : 
+```bash
+./run_tests.sh
+```
 
 Outputs are saved in tests/outputs/ folder.
 
 ## Supported Features
 
-1. Memory Allocation Algorithms:
+1. **Memory Allocation Algorithms:**
 
     First Fit
     Best Fit
     Worst Fit
     Buddy Allocator (splitting and merging)
 
-2. Memory Metrics:
+2. **Memory Metrics:**
 
     Total memory
     Used memory
@@ -81,20 +84,20 @@ Outputs are saved in tests/outputs/ folder.
     Allocation success/failure rate
     Memory utilization
 
-3. Cache Simulation:
+3. **Cache Simulation:**
 
     L1 and L2 caches
     FIFO replacement (LRU optional)
     Tracks hits and misses
 
-4. Virtual Memory Simulation:
+4. **Virtual Memory Simulation:**
 
     Paging
     Page table
     Page hits and faults
     Optional disk latency simulation
 
-5. Integration:
+5. **Integration:**
 
     Virtual address → Page Table → Physical Memory → Cache → RAM
 
