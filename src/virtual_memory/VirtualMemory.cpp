@@ -16,33 +16,57 @@ int VirtualMemory::access(int virtual_address) {
     int page_number = virtual_address / PAGE_SIZE;
     int offset = virtual_address % PAGE_SIZE;
 
+    std::cout << "VM ACCESS: virtual address " << virtual_address << "\n";
+    std::cout << "→ Page " << page_number << ", Offset " << offset << "\n";
+
     int frame;
 
-    //  TLB lookup
+    // 1️⃣ TLB lookup
     if (tlb.lookup(page_number, frame)) {
         page_hits++;
+        std::cout << "→ TLB HIT\n";
+        std::cout << "→ Page " << page_number << " found in frame " << frame << "\n";
+        std::cout << "→ Physical address = " 
+                  << frame * PAGE_SIZE + offset << "\n\n";
         return frame * PAGE_SIZE + offset;
     }
 
-    //  Page table lookup
+    std::cout << "→ TLB MISS\n";
+
+    // 2️⃣ Page table lookup
     if (page_table.count(page_number) && page_table[page_number].valid) {
         page_hits++;
         frame = page_table[page_number].frame_number;
+
+        std::cout << "→ PAGE HIT\n";
+        std::cout << "→ Page " << page_number 
+                  << " mapped to frame " << frame << "\n";
+
         tlb.insert(page_number, frame);
 
-        // Update LRU for frame
+        // Update LRU
         lru_frames.remove(frame);
         lru_frames.push_front(frame);
+
+        std::cout << "→ Physical address = " 
+                  << frame * PAGE_SIZE + offset << "\n\n";
 
         return frame * PAGE_SIZE + offset;
     }
 
-    //  Page fault
+    // 3️⃣ Page fault
     page_faults++;
+    std::cout << "→ PAGE FAULT\n";
+
     handle_page_fault(page_number);
 
     frame = page_table[page_number].frame_number;
     tlb.insert(page_number, frame);
+
+    std::cout << "→ Page " << page_number 
+              << " loaded into frame " << frame << "\n";
+    std::cout << "→ Physical address = " 
+              << frame * PAGE_SIZE + offset << "\n\n";
 
     return frame * PAGE_SIZE + offset;
 }
@@ -87,6 +111,10 @@ void VirtualMemory::handle_page_fault(int page_number) {
 
         int victim_page = frame_to_page[victim_frame];
         page_table[victim_page].valid = false;
+
+        std::cout << "→ Evicting page " << victim_page
+                  << " from frame " << victim_frame << "\n";
+
         frame = victim_frame;
     }
 
@@ -97,6 +125,7 @@ void VirtualMemory::handle_page_fault(int page_number) {
     // Update LRU
     lru_frames.push_front(frame);
 }
+
 
 void VirtualMemory::print_stats() const {
     std::cout << "Page hits: " << page_hits << "\n";
