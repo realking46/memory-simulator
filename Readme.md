@@ -164,8 +164,12 @@ The simulator reports:
    - Page hits
    - Page faults
 
+## Demo Video
+https://drive.google.com/drive/folders/1m7OwzK-W1MICDUqCmw6kZCg1oRbF7VG_?usp=sharing
+
 ## Authors
 Nishant Singh
+
 
 
 
